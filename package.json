@@ -1,0 +1,23 @@
+{
+  "name": "air_bnb",
+  "version": "1.0.0",
+  "description": "Markers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umairb1/Makersbnb-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umairb1/Makersbnb-project/issues"
+  },
+  "homepage": "https://github.com/umairb1/Makersbnb-project#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-g": "^1.0.9"
+  }
+}
