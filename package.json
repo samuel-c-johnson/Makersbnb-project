@@ -18,7 +18,8 @@
   "homepage": "https://github.com/umairb1/Makersbnb-project#readme",
   "dependencies": {
     "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "express-session": "^1.15.6"
   },
   "devDependencies": {
     "karma": "^2.0.0",
