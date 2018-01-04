@@ -10,7 +10,15 @@ app.set('view engine', 'ejs');
 
 // index page
 app.get('/', function(req, res) {
-  res.render('pages/index.ejs');
+  res.render('pages/index');
+});
+
+app.get('/lease', function(req, res) {
+  res.render('pages/lease');
+});
+
+app.get('/rent', function(req, res) {
+  res.render('pages/rent');
 });
 
 app.listen(8080);
