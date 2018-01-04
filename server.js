@@ -1,16 +1,20 @@
 // server.js
 // load the things we need
 var express = require('express');
-var app = express();
 var session = require('express-session');
+var app = express();
+
 
 //set the view engine to ejs
 app.set('view engine', 'ejs');
 
 
-
 // var sess = {
-// app.use(session(sess);
+app.use(session({
+  secret: 'property',
+  saveUninitialized: false,
+  resave: false
+}));
 
 // use res.render to load up an ejs view file
 
@@ -27,12 +31,15 @@ app.get('/rent', function(req, res) {
   res.render('pages/rent');
 });
 
-app.post('/lease/new', function(req, res) {
-  // sess = req.session.name;
-  res.redirect('pages/listedProperty');
-});
+// app.post('/lease/new', function(req, res) {
+//   console.log(req.session)
+//   // req.session.userName = req.query.name;
+//   // res.send(req.session)
+//   res.redirect('pages/listedProperty');
+// });
 
 app.get('/lease/pages/listedProperty', function(req, res) {
+  // res.send(req.session)
   res.render('pages/listedProperty');
 });
 
