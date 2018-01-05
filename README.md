@@ -1,6 +1,6 @@
 # Makersbnb-project
 
-The challenge was to work in a team to build a clone of Airbnb.
+The challenge- build a clone of Airbnb as a team.
 
 After holding a meeting with the team it was decided that instead of using ruby and html, which we had all used before,
 we would use javascript and Node.js. The team made this decision because we wanted to test ourselves by building a web app using unfamiliar technologies.
