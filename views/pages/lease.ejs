@@ -10,16 +10,50 @@
     <% include ../partials/header %>
 </header>
 
-
-
-  <title> Lease a property </title>
-  <form action='/lease/new' method='post'>
-    Name:        <input type='text' name='name'         /><br />
-    Email:       <input type='text' name='email'        /><br />
-    Location:    <input type='text' name='location'     /><br />
-    Capacity:    <input type='text' name='capacity'     /><br />
-    Cost:        <input type='text' name='cost'         /><br />
-    Description :<input type='text' name='description'  /><br />
-    <input type='submit' value='Submit'>
-  </form>
+<body>
+	<div class="col-md-12">
+		<div class="modal-dialog" style="margin-bottom:0">
+			<div class="modal-content">
+				<div class="panel-heading">
+					<h3 class="panel-title">Lease a room</h3>
+				</div>
+				<div class="panel-body">
+					<form action='/lease/new' method='post' role="form">
+						<fieldset>
+							<div class="form-group">
+							  <input class="form-control" placeholder="Name" name="name" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Mobile number" name="phone" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+							  <input class="form-control" placeholder="City" name="location" type="text" autofocus="">
+							</div>
+              <div class="form-group">
+							  <input class="form-control" placeholder="Address" name="address" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Beds available" name="capacity" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Description" name="description" type="text" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Price per night" name="cost" type="number" value="">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input name="remember" type="checkbox" value="Remember Me">Be notified by SMS
+								</label>
+							</div>
+						<input type='submit' value='Add your listing' class="btn btn-sm btn-success">
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
